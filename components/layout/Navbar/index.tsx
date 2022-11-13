@@ -102,7 +102,8 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/fernandoguima/'
-            >
+                        rel="noreferrer" target="_blank">
+
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
@@ -110,15 +111,15 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://github.com/guima-seifer'
-            >
+            rel="noreferrer" target="_blank">
               Github <FaGithub size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-teal-900 ml-[-100px] hover:ml-[-10px] duration-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='email:fernandobvguimaraes@gmail.com'
-            >
+              href='mailto:fernandobvguimaraes@gmail.com'
+            rel="noreferrer">
               Email <HiOutlineMail size={30} />
             </a>
           </li>
