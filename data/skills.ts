@@ -14,6 +14,40 @@ export const skills=[
         name:"HTML",
         image:HTML,
     },
-   
+    {
+        id:2,
+        name:"CSS",
+        image:CSS,
+    },
+    {
+        id:3,
+        name:"Reactjs",
+        image:REACT,
+    },
+    {
+        id:4,
+        name:"Nodejs",
+        image:NODE,
+    },
+    {
+        id:5,
+        name:"Firebase",
+        image:FIREBASE,
+    },
+    {
+        id:6,
+        name:"Github",
+        image:GITHUB,
+    },
+    {
+        id:7,
+        name:"Mongodb",
+        image:MONGO,
+    },
+    {
+        id:8,
+        name:"Tailwind",
+        image:TAILWIND,
+    },
 
 ]

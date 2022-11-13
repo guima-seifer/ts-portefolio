@@ -1,10 +1,9 @@
 import React from 'react'
-import Section from './layout/Section'
-import { data } from '../data/work'
+import Section from '../layout/Section'
+import { works } from '../../data/work'
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 const Work = () => {
-  const project = data
 
   return (
     <Section charKey={'work'}>
@@ -14,13 +13,13 @@ const Work = () => {
         </p>
         <p className='py-6'>// Check out some of my recent work.</p>
       </div>
-      {/* container for projects */}
+      {/* Container */}
       <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
         {/* Grid Item */}
-        {project.map((item, index) => (
+        {works.map((item, index) => (
           <div
             key={index}
-            style={{ backgroundImage: `url(${item.image})` }}
+            style={{ backgroundImage: `url("https://via.placeholder.com/500")` }}
             className='shadow-lg shadow-[#040c16] group container rounded-nd flex justify-center items-center mx-auto content-div'
           >
             {/* Hover Effects */}

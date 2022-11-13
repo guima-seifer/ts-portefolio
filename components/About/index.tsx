@@ -1,6 +1,6 @@
 import React from 'react'
-import { NavBarProps } from './layout/Navbar'
-import Section from './layout/Section'
+import { NavBarProps } from '../layout/Navbar'
+import Section from '../layout/Section'
 
 export type AboutProps = {
   children?: React.ReactNode

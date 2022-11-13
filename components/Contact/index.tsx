@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from './layout/Section'
+import Section from '../layout/Section'
 
 const Contact = () => {
   return (
@@ -14,7 +14,7 @@ const Contact = () => {
             Contact
           </p>
           <p className='py-4'>
-            // Submit the form to send me an email
+            Submit the form to send me an email
           </p>
         </div>
         <input
