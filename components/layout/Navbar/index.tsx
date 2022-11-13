@@ -96,12 +96,12 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
         </li>
       </ul>
       {/* Social Icons */}
-      <div className='flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-teal-900 ml-[-100px] hover:ml-[-10px] duration-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href=''
+              href='https://www.linkedin.com/in/fernandoguima/'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -109,7 +109,7 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-teal-900 ml-[-100px] hover:ml-[-10px] duration-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href=''
+              href='https://github.com/guima-seifer'
             >
               Github <FaGithub size={30} />
             </a>
@@ -117,7 +117,7 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-teal-900 ml-[-100px] hover:ml-[-10px] duration-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href=''
+              href='email:fernandobvguimaraes@gmail.com'
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -125,7 +125,7 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-teal-900 ml-[-100px] hover:ml-[-10px] duration-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href=''
+              href='/CV_FernandoGuimaraes_EN.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
