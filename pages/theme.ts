@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components'
 
-export const theme = {
+const theme = {
     colors: {
         primary: '#212121',
     }
@@ -14,3 +14,6 @@ const Section = tw.div`
     text-gray-900
      dark:text-gray-300
   ` 
+
+
+  export default theme
