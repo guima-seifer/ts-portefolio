@@ -1,4 +1,4 @@
-import ImgHouseMarketplace from '../assets/logozinho.jpg'
+import ImgHouseMarketplace from '../assets/house-marketplace.png'
 
 
 export const works=[
