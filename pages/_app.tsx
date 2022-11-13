@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import {ThemeProvider} from 'styled-components'
 import { GlobalStyle } from '../styles/globalStyle'
-import { theme } from './theme'
+import { theme } from '../styles/theme'
 
 
 
