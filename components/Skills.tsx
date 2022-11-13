@@ -1,26 +1,16 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import HTML from '../assets/html.png'
-import REACT from '../assets/react.png'
-import NODE from '../assets/node.png'
-import CSS from '../assets/css.png'
-import AWS from '../src/assets/aws.png'
-import FIREBASE from '../assets/firebase.png'
-import GITHUB from '../assets/github.png'
-import MONGO from '../assets/mongo.png'
-import TAILWIND from '../assets/tailwind.png'
 import Image from 'next/image'
-import { NavBarProps } from './Navbar'
+import { NavBarProps } from './layout/Navbar'
+import Section from './layout/Section'
 
 export type SkillsProps = {
   children?: React.ReactNode;
-  dark?: NavBarProps,
 }
 
-const Skills = ({dark}: SkillsProps) => {
+const Skills = () => {
   return (
-    <div id='skills' className='w-full h-screen bg-white dark:bg-[#0a192f] text-gray-900 dark:text-gray-300'>
-      {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    
+    <Section charKey={'skills'}>
         <div>
           <p
             className='text-4xl font-bold 
@@ -66,8 +56,8 @@ const Skills = ({dark}: SkillsProps) => {
             <p>Firebase</p>
           </div>
         </div>
-      </div>
-    </div>
+    </Section>
+
   )
 }
 

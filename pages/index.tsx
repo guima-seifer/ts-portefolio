@@ -1,7 +1,7 @@
 import About from '../components/About'
 import Contact from '../components/Contact'
 import { Hero } from '../components/Hero'
-import { Navbar, NavBarProps} from '../components/Navbar'
+import { Navbar } from '../components/layout/Navbar'
 import Skills from '../components/Skills'
 import Work from '../components/Work'
 import React, { useState, useEffect } from 'react'
