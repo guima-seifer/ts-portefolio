@@ -103,7 +103,6 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/fernandoguima/'
                         rel="noreferrer" target="_blank">
-
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>

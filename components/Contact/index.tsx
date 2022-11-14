@@ -3,7 +3,7 @@ import Section from '../layout/Section'
 
 const Contact = () => {
   return (
-    <Section charKey={'contact'} >
+    <Section charKey={'contact'} className=''>
       <form
         method='POST'
         action='https://getform.io/f/be51338c-b526-44b0-9a54-131fea7b9c13'
