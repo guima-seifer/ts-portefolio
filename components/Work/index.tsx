@@ -1,12 +1,12 @@
 import React from 'react'
-import Section from '../layout/Section'
+import Section from '../Section'
 import { works } from '../../data/work'
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 const Work = () => {
   return (
-    <Section charKey={'work'}>
-      <div className='pb-8'>
+    <Section charKey='work'>
+      <div className='mt-5 py-8'>
         <p className='text-4xl font-bold inline border-b-4  border-pink-600'>
           Work
         </p>

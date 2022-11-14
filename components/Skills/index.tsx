@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Image from 'next/image'
-import Section from '../layout/Section'
+import Section from '../Section'
 import { skills } from '../../data/skills'
+import TitleSection from '../Section/title'
 
 export type SkillsProps = {
   children?: React.ReactNode
@@ -10,16 +11,7 @@ export type SkillsProps = {
 const Skills = () => {
   return (
     <Section charKey={'skills'}>
-      <div>
-        <p
-          className='text-4xl font-bold 
-          inline border-b-4
-           border-pink-600'
-        >
-          Experience
-        </p>
-        <p className='py-4'>// These are the tecnologies I´ve worked with</p>
-      </div>
+      <TitleSection title="Skills" desc="These are the tecnologies I´ve worked with" />
       {/* Icons container */}
 
       <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 '>

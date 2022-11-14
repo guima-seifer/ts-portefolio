@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavBarProps } from '../layout/Navbar'
-import Section from '../layout/Section'
+import Section from '../Section'
+import TitleSection from '../Section/title'
 
 export type AboutProps = {
   children?: React.ReactNode
@@ -9,12 +10,9 @@ export type AboutProps = {
 const About = () => {
   return (
     <Section charKey='about'>
-      {' '}
       <div className='grid grid-cols-2 gap-8'>
         <div className='sm:text-right pb-8 pl-4'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
-            About
-          </p>
+        <TitleSection title="About"/>
         </div>
       </div>
       <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>

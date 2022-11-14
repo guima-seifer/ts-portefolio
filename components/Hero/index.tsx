@@ -1,5 +1,5 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import Section from '../layout/Section'
+import Section from '../Section'
 
 export type HeroProps = {
   children?: React.ReactNode
