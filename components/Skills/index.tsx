@@ -13,6 +13,7 @@ const Skills = () => {
     <Section charKey={'skills'}>
       <TitleSection title="Skills" desc="These are the tecnologies I´ve worked with" />
       {/* Icons container */}
+        <p className='py-4'>These are the tecnologies I´ve worked with</p>
 
       <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 '>
         {skills.map((item, index) => (

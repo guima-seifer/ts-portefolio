@@ -1,15 +1,14 @@
 import React from 'react'
 import Section from '../Section'
 import { works } from '../../data/work'
+import SectionTitle from '../layout/SectionTitle'
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 const Work = () => {
   return (
     <Section charKey='work'>
-      <div className='mt-5 py-8'>
-        <p className='text-4xl font-bold inline border-b-4  border-pink-600'>
-          Work
-        </p>
+      <div className='my-8'>
+      <SectionTitle title='Work'/>
         <p className='py-6'>Check out some of my recent work.</p>
       </div>
       {/* Container */}
