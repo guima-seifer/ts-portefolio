@@ -1,19 +1,38 @@
 import { User } from '../model/User'
 import fetch from 'isomorphic-unfetch'
 
+const GITHUB_URL = process.env.REACT_APP_GITHUB_URL
+const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
+const options = {
+  method: 'POST',
+  headers: {
+    "Content-type": "application/x-www-form-urlencoded",
+    'Accept': 'application/json',
+    'Authorization': `token ${GITHUB_TOKEN}`
 
-
-export const fetchUsers = async (login : string): Promise<User[]> => {
-  const baseRoot = `https://api.github.com/users/${login}`;
-const userCollectionURL = `${baseRoot}/repos`
-  const res = await fetch(userCollectionURL)
-  const data = await res.json();
-
-  const res2 = await fetch(baseRoot)
-  const data2 = await res2.json();
-  console.log(data2)
-
-  return data.map(
-    ({ ...User } : User) => ({ ...User } as User)
-  );
+  }
 }
+export const fetchUsers = async (login: string): Promise<User> => {
+
+  const baseRoot = `${GITHUB_URL}/users/${login}`
+  const userReposURL = `${baseRoot}/repos`
+  const res = await fetch(userReposURL, options)
+
+  const resRepos = await res.json();
+
+  const resUser = await fetch(baseRoot)
+  const user = await resUser.json();
+  console.log(user)
+
+return user
+}
+
+/* //Get user and repos
+export const getUserAndRepos = async (login: string) => {
+  const [user, repos] = await Promise.all([
+    github.get(`/users/${login}`),
+    github.get(`/users/${login}/repos`),
+  ])
+  console.log(repos.data)
+  return { user: user.data, repos: repos.data }
+} */
