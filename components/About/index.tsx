@@ -1,7 +1,7 @@
 import React from 'react'
-import { NavBarProps } from '../layout/Navbar'
-import Section from '../Section'
-import TitleSection from '../Section/title'
+import { NavBarProps } from '../layout/navbar'
+import Section from '../layout/section'
+import TitleSection from '../layout/section/title'
 
 export type AboutProps = {
   children?: React.ReactNode
@@ -11,7 +11,7 @@ const About = () => {
   return (
     <Section charKey='about'>
       <div className='grid grid-cols-2 gap-8'>
-        <div className='sm:text-right pb-8 pl-4'>
+        <div className='sm:text-right pb-8'>
         <TitleSection title="About"/>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from '../Section'
-import TitleSection from '../Section/title'
+import Section from '../layout/section'
+import TitleSection from '../layout/section/title'
 
 const Contact = () => {
   return (

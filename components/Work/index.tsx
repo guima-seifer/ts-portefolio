@@ -1,25 +1,22 @@
 import React from 'react'
-import Section from '../Section'
+import Section from '../layout/section'
 import { works } from '../../data/work'
-import SectionTitle from '../layout/SectionTitle'
+import TitleSection from '../layout/section/title'
 /* eslint-disable react/jsx-no-comment-textnodes */
 
 const Work = () => {
   return (
     <Section charKey='work'>
-      <div className='my-8'>
-      <SectionTitle title='Work'/>
-        <p className='py-6'>Check out some of my recent work.</p>
-      </div>
+      <TitleSection title='Work' desc="Check out some of my recent work."/>
       {/* Container */}
-      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+      <div className='pt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
         {/* Grid Item */}
         {works.map((item, index) => (
  
           <div
             key={index}
             style={{ backgroundImage: `url(${item.image.src})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-nd flex justify-center items-center mx-auto content-div'
+            className='shadow-lg shadow-[#040c16] group container rounded-nd flex justify-center items-center mx-auto content-div mt-3'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>

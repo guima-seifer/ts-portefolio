@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Image from 'next/image'
-import Section from '../Section'
+import Section from '../layout/section'
 import { skills } from '../../data/skills'
-import TitleSection from '../Section/title'
+import TitleSection from '../layout/section/title'
 
 export type SkillsProps = {
   children?: React.ReactNode
@@ -13,8 +13,6 @@ const Skills = () => {
     <Section charKey={'skills'}>
       <TitleSection title="Skills" desc="These are the tecnologies I´ve worked with" />
       {/* Icons container */}
-        <p className='py-4'>These are the tecnologies I´ve worked with</p>
-
       <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 '>
         {skills.map((item, index) => (
           <div
