@@ -8,7 +8,7 @@ interface Props  {
 const TitleSection = ({ ...Props }) => {
   return (
     <div>
-    <p
+    <p 
       className='text-4xl font-bold 
       inline border-b-4
        border-pink-600'

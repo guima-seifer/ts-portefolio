@@ -1,21 +1,26 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
-import { fetchUsers } from '../../api/github'
+import { fetchRepos, fetchUsers } from '../../api/github'
+import Section from '../../components/layout/section'
+import RepoList from '../../components/repos/RepoList'
 import UserItem from '../../components/repos/UserItem'
+import { Repo } from '../../model/Repo'
 import { User } from '../../model/User'
 
 interface Props {
   user: User
+  repos: Repo[]
 }
 
-const Repos: NextPage<Props> = ({user} : Props) => (
+const Repos: NextPage<Props> = ({ user, repos }: Props) => (
   <>
-   <div>
+    <div className='my-auto'>
     <UserItem {...user} />
-  </div>
-</>
- 
-  
+    </div>
+    <div className='my-auto'>
+    <RepoList repos={repos} />
+    </div>
+  </>
 )
 
 /* getInitialProps enables server-side rendering in a page and 
@@ -24,8 +29,10 @@ page with the data already populated from the server.
 This is especially useful for SEO. */
 Repos.getInitialProps = async () => {
   const user = await fetchUsers('guima-seifer')
+  const repos = await fetchRepos('guima-seifer')
   return {
     user,
+    repos,
   }
 }
 

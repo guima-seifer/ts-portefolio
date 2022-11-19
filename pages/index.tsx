@@ -6,6 +6,8 @@ import Skills from '../components/skills'
 import Work from '../components/work'
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
+import UserItem from '../components/repos/UserItem'
+import Repos from './repos'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false)

@@ -1,50 +1,47 @@
-import PropTypes from 'prop-types'
 import { FaEye, FaInfo, FaLink, FaStar, FaUtensils } from 'react-icons/fa'
+import { Repo } from '../../model/Repo'
+import Button from '../layout/Button'
 
-
-function RepoItem({ repo }: any) {
-    const {
-        name,
-        description,
-        html_url,
-        forks,
-        open_issues,
-        watchers_count,
-        stargazers_count,
-    } = repo
-
+function RepoItem({
+  name,
+  id,
+  description,
+  html_url,
+  forks,
+  open_issues,
+  watchers_count,
+  stargazers_count,
+}: Repo) {
   return (
-    <div className='mb-2 rounded-md card bg-gray-800 hoover:bg-gray-900'>
-    <div className="card-body">
-        <h3 className="mb-2 text-xl font-semi-bold">
-            <a href={html_url}>
-                <FaLink className='inline mr-1' /> {name}
-            </a>
-        </h3>
-        <p className="mb-3">{description}</p>
-        <div>
-            <div className="mr-2 badge badge-info badge-lg">
-                <FaEye className="mr-2"/> {watchers_count}
-            </div>
-            <div className="mr-2 badge badge-success badge-lg">
-                <FaStar className="mr -2"/> {stargazers_count}
-            </div>
-            <div className="mr-2 badge badge-error badge-lg">
-                <FaInfo className="mr-2"/> {open_issues}
-            </div>
-            <div className="mr-2 badge badge-warning badge-lg">
-                <FaUtensils className="mr-2"/> {forks}
-            </div>
+
+    <div
+    key={id}
+    className='shadow-lg shadow-[#040c16] group container rounded-nd flex  items-center content-div mt-3'
+  >
+    {/* Hover Effects */}
+    <div className='px-3'>
+      <span className='text-xl font-bold justify-center text-black tracking-wider'>
+        {name}
+      </span>
+      <p className='text-black tracking-wider'>
+        {description}
+      </p>
+      <div className=' flex justify-between mt-3 mx-4'>
+        <FaEye  />
+        <FaInfo />
+        <FaLink  />
+        <FaStar />
         </div>
+      <div className='flex justify-center pt-3'>
+        {/* eslint-disable-next-line */}
+            <Button title={"Repo"} />
+      </div>
     </div>
-    </div>
+  </div>
+
+    
+   
   )
-
-
 }
-
-RepoItem.propTypes ={
-    repo: PropTypes.object.isRequired,
-  }
 
 export default RepoItem
