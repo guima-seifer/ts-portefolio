@@ -5,7 +5,7 @@ export type HeroProps = {
   children?: React.ReactNode
 }
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <Section charKey='home'>
       <p className='dark:text-pink-600'>Hi, my name is</p>
@@ -31,3 +31,4 @@ export const Hero = () => {
     </Section>
   )
 }
+export default Hero

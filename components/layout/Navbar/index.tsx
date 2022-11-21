@@ -10,7 +10,7 @@ export type NavBarProps = {
   updateDarkMode: (arg: boolean) => void
 }
 
-export const Navbar = ({updateDarkMode} : NavBarProps) => {
+const Navbar = ({updateDarkMode} : NavBarProps) => {
 
   const [nav, setNav] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
@@ -137,3 +137,4 @@ export const Navbar = ({updateDarkMode} : NavBarProps) => {
 }
 
 
+export default Navbar
