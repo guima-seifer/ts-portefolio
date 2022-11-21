@@ -157,6 +157,7 @@ const Hero = ()=>{
         ]
     });
 };
+/* harmony default export */ const hero_section = (Hero);
 
 // EXTERNAL MODULE: external "react-icons/fa"
 var fa_ = __webpack_require__(6290);
@@ -380,6 +381,7 @@ const Navbar = ({ updateDarkMode  })=>{
         ]
     });
 };
+/* harmony default export */ const navbar = (Navbar);
 
 ;// CONCATENATED MODULE: ./assets/html.png
 /* harmony default export */ const html = ({"src":"/_next/static/media/html.e89c02ec.png","height":250,"width":250,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAY1BMVEXjRR7lQxTpsaLnUyf1oX7lTybsZTbmQxPjVC/ePyL4xbDgNw/iQhnhOhHkTSf5vaPkSBzjRR3nUSTjSyTzjWPq4N76w6fkWzfojXPoxr7mbUznn43wbz382cf959zpq5nun4X27+7uAAAAHHRSTlM7y/3s/v799wMT/SViS3T+kZHj6P79/f/////+PVWgIAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAERJREFUeJwFwYUBwCAQBLBDH6eOtt1/SxIkRUSkEkIZf35mQOx3lVJHoDTusga8Gv36tIcVjbtXWJizVDkPC4OdsQ1mAXvgA0d4WuNJAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
@@ -622,10 +624,10 @@ const Home = ({ user , repos  })=>{
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(Navbar, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(navbar, {
                         updateDarkMode: updateDarkMode
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Hero, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(hero_section, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(about_section, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(skills_section, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(work_section, {}),
