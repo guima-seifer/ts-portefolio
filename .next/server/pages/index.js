@@ -5,7 +5,7 @@ exports.id = 405;
 exports.ids = [405,744];
 exports.modules = {
 
-/***/ 4973:
+/***/ 154:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -24,7 +24,7 @@ var external_react_ = __webpack_require__(6689);
 var section = __webpack_require__(7204);
 // EXTERNAL MODULE: ./components/layout/section/title.tsx
 var title = __webpack_require__(3398);
-;// CONCATENATED MODULE: ./components/about/index.tsx
+;// CONCATENATED MODULE: ./components/about-section/index.tsx
 
 
 
@@ -61,11 +61,11 @@ const About = ()=>{
         ]
     });
 };
-/* harmony default export */ const about = (About);
+/* harmony default export */ const about_section = (About);
 
 // EXTERNAL MODULE: ./components/layout/Button.tsx
 var Button = __webpack_require__(4232);
-;// CONCATENATED MODULE: ./components/contact/index.tsx
+;// CONCATENATED MODULE: ./components/contact-section/index.tsx
 
 
 
@@ -112,11 +112,11 @@ const Contact = ()=>{
         })
     });
 };
-/* harmony default export */ const contact = (Contact);
+/* harmony default export */ const contact_section = (Contact);
 
 ;// CONCATENATED MODULE: external "react-icons/hi"
 const hi_namespaceObject = require("react-icons/hi");
-;// CONCATENATED MODULE: ./components/hero/index.tsx
+;// CONCATENATED MODULE: ./components/hero-section/index.tsx
 
 
 
@@ -449,7 +449,7 @@ const skills = [
     }
 ];
 
-;// CONCATENATED MODULE: ./components/skills/index.tsx
+;// CONCATENATED MODULE: ./components/skills-section/index.tsx
 /* eslint-disable react/jsx-no-comment-textnodes */ 
 
 
@@ -482,7 +482,7 @@ const Skills = ()=>{
         ]
     });
 };
-/* harmony default export */ const components_skills = (Skills);
+/* harmony default export */ const skills_section = (Skills);
 
 ;// CONCATENATED MODULE: ./assets/house-marketplace.png
 /* harmony default export */ const house_marketplace = ({"src":"/_next/static/media/house-marketplace.cefde124.png","height":940,"width":960,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAATlBMVEX5+vuoq6yAdW25sa/19fbNzM7CxtDy9fnx8/bu8PPFtJ/T1dKloaHi5OdSUFVcV1/Gv7igk45+jZ2imYrJuquTnKKYfmXOwLDs6+tnfIiuO2aYAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAQElEQVR4nBXExxHAMAwDMLrIIl3S6/6L5oIH0J5MSkK47mNvtaK/Z9/CkjCGWQmlwCytcZ4iRFCUQKe7O4EM/H1e2AIomNjjWwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
@@ -519,7 +519,7 @@ const works = [
     }
 ];
 
-;// CONCATENATED MODULE: ./components/work/index.tsx
+;// CONCATENATED MODULE: ./components/work-section/index.tsx
 
 
 
@@ -575,7 +575,7 @@ const works = [
         ]
     });
 };
-/* harmony default export */ const work = (Work);
+/* harmony default export */ const work_section = (Work);
 
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
@@ -583,7 +583,7 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
 // EXTERNAL MODULE: ./api/github.ts
 var api_github = __webpack_require__(4397);
 // EXTERNAL MODULE: ./pages/repos/index.tsx + 3 modules
-var pages_repos = __webpack_require__(4904);
+var pages_repos = __webpack_require__(712);
 ;// CONCATENATED MODULE: ./pages/index.tsx
 
 
@@ -626,14 +626,14 @@ const Home = ({ user , repos  })=>{
                         updateDarkMode: updateDarkMode
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(Hero, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(about, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(components_skills, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(work, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(about_section, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(skills_section, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(work_section, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(pages_repos["default"], {
                         user: user,
                         repos: repos
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(contact, {})
+                    /*#__PURE__*/ jsx_runtime_.jsx(contact_section, {})
                 ]
             })
         ]
@@ -904,7 +904,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676,61,904], () => (__webpack_exec__(4973)));
+var __webpack_exports__ = __webpack_require__.X(0, [676,61,712], () => (__webpack_exec__(154)));
 module.exports = __webpack_exports__;
 
 })();

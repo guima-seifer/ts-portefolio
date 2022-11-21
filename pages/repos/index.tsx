@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 import { fetchRepos, fetchUsers } from '../../api/github'
 import Section from '../../components/layout/section'
-import RepoList from '../../components/repos/RepoList'
-import UserItem from '../../components/repos/UserItem'
+import RepoList from '../../components/repos-section/list'
+import UserItem from '../../components/repos-section/user-info'
 import { Repo } from '../../model/Repo'
 import { User } from '../../model/User'
 
