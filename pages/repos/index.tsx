@@ -14,12 +14,10 @@ interface Props {
 }
 
 const Repos: NextPage<Props> = ({ user, repos }: Props) => (
-  <>
     <Section>
     <UserItem {...user} />
     <RepoList repos={repos} />
     </Section>
-  </>
 )
 
 /* getInitialProps enables server-side rendering in a page and 

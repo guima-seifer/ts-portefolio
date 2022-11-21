@@ -13,27 +13,27 @@ const Contact = () => {
       >
         <TitleSection title="Contact" desc="Submit the form to send me an email" />
         <input
-          className='bg-[#ccd6f6] p-2'
+          className='bg-[#f1f1f1] p-2'
           type='text'
           name='name'
           id='name'
           placeholder='Name'
         />
         <input
-          className='bg-[#ccd6f6] my-4 p-2'
+          className='bg-[#f1f1f1] my-4 p-2'
           type='email'
           name='email'
           id='email'
           placeholder='Email'
         />
         <textarea
-          className='bg-[#ccd6f6]'
+          className='bg-[#f1f1f1]'
           name='message'
           id='message'
           rows={10}
           placeholder='Message'
         ></textarea>
-        <Button title={'Let´s Collaborate'} />
+        <Button title={'Let´s Work Together'} />
 
       </form>
     </Section>
