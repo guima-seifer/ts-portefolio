@@ -1,10 +1,5 @@
 import React from 'react'
 
-interface Props  {
-  children?: React.ReactNode
-  charKey: string
-}
-
 const Section = ({ ...Props }) => {
   return (
     <div

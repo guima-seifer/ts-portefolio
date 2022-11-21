@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-import Link from 'next/link'
 import { fetchRepos, fetchUsers } from '../../api/github'
 import Section from '../../components/layout/section'
 import RepoList from '../../components/repos/RepoList'

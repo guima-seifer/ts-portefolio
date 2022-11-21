@@ -1,10 +1,5 @@
 import React from 'react'
 
-interface Props  {
-    title: string
-    desc?: string    
-}
-
 const TitleSection = ({ ...Props }) => {
   return (
     <div>

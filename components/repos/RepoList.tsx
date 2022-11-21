@@ -1,5 +1,4 @@
 import { Repo } from '../../model/Repo'
-import Section from '../layout/section'
 import RepoItem from './RepoItem'
 
 interface Props {

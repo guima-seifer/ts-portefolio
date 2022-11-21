@@ -43,6 +43,7 @@ function RepoItem({
         <div className='flex justify-center pt-3'>
           {/* eslint-disable-next-line */}
           <Link className='mx-auto' target='_blank' href={`${html_url}`}>
+            <FaLink className='mr -2' />
             <Button title={'Repo'} />
           </Link>
         </div>

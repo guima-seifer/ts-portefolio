@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { User } from '../../model/User'
-import type { ImageLoaderProps } from 'next/image'
 import Image from 'next/image'
 import TitleSection from '../layout/section/title'
 import Button from '../layout/Button'
@@ -15,7 +14,7 @@ function UserItem({ avatar_url, login }: User) {
       <div className='mt-8 flex flex-row'>
         <div className='shadow-md'>
           <div className='mx-auto'>
-          <Image className='mx-auto' src={avatar_url as string} alt='Profile' height={100} width={100} />
+          <Image className='mx-auto' src={avatar_url as string} alt='Github Profile Pic' height={100} width={100} />
           <h2 className='text-center font-bold'><FaGithubAlt className='inline mr-2' />{login}</h2>
           </div>
           
