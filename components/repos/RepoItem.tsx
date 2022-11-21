@@ -20,17 +20,25 @@ function RepoItem({
   >
     {/* Hover Effects */}
     <div className='px-3'>
-      <span className='text-xl font-bold justify-center text-black tracking-wider'>
+      <span className='text-xl font-bold justify-center text-black tracking-wider dark:text-white'>
         {name}
       </span>
-      <p className='text-black tracking-wider'>
+      <p className='text-black tracking-wider dark:text-gray-300'>
         {description}
       </p>
       <div className=' flex justify-between mt-3 mx-4'>
-        <FaEye  />
-        <FaInfo />
-        <FaLink  />
-        <FaStar />
+            <div className="mr-2 badge badge-info badge-lg">
+                <FaEye className="mr-2"/> {watchers_count}
+            </div>
+            <div className="mr-2 badge badge-success badge-lg">
+                <FaStar className="mr -2"/> {stargazers_count}
+            </div>
+            <div className="mr-2 badge badge-error badge-lg">
+                <FaInfo className="mr-2"/> {open_issues}
+            </div>
+            <div className="mr-2 badge badge-warning badge-lg">
+                <FaUtensils className="mr-2"/> {forks}
+            </div>
         </div>
       <div className='flex justify-center pt-3'>
         {/* eslint-disable-next-line */}

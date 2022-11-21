@@ -7,6 +7,7 @@ import UserItem from '../../components/repos/UserItem'
 import { Repo } from '../../model/Repo'
 import { User } from '../../model/User'
 
+
 interface Props {
   user: User
   repos: Repo[]
@@ -14,12 +15,10 @@ interface Props {
 
 const Repos: NextPage<Props> = ({ user, repos }: Props) => (
   <>
-    <div className='my-auto'>
+    <Section>
     <UserItem {...user} />
-    </div>
-    <div className='my-auto'>
     <RepoList repos={repos} />
-    </div>
+    </Section>
   </>
 )
 

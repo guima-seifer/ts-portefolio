@@ -6,10 +6,19 @@ import Skills from '../components/skills'
 import Work from '../components/work'
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import UserItem from '../components/repos/UserItem'
+import { NextPage } from 'next'
+import { User } from '../model/User'
+import { Repo } from '../model/Repo'
+import { fetchRepos, fetchUsers } from '../api/github'
 import Repos from './repos'
 
-export default function Home() {
+
+interface Props {
+  user: User
+  repos: Repo[]
+}
+
+const Home : NextPage<Props> = ({user, repos}) => { 
   const [darkMode, setDarkMode] = useState<boolean>(false)
 
   const updateDarkMode = (dark: boolean):void => {
@@ -31,8 +40,20 @@ export default function Home() {
         <About />
         <Skills />
         <Work />
+        <Repos user={user} repos={repos} />
         <Contact />
       </main>
     </div>
   )
 }
+
+Home.getInitialProps = async () => {
+  const user = await fetchUsers('guima-seifer')
+  const repos = await fetchRepos('guima-seifer')
+  return {
+    user,
+    repos,
+  }
+}
+
+export default Home

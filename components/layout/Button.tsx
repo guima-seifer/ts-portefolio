@@ -1,19 +1,21 @@
 import React from 'react'
 
 interface Props {
-    title: string
-    children?: React.ReactNode
+  title?: string
 }
 
-const Button = (props : Props) => {
+const Button = ({
+  title} : Props) => {
   return (
     <button
-      className='bg-pink-600 text-white  group border-2 px-6 py-3 
+      className='bg-white text-pink-600 dark:text-white dark:bg-pink-600 dark:hover:bg-white dark:hover:text-pink-600
+      group border-2 px-6 py-3
+       border-pink-600
       my-2 flex 
-      items-center dark:hover:border-pink-600 hover:border-pink-600'
+      items-center hover:bg-pink-600 hover:text-white mx-auto'
     >
-      {props.title}
-    </button>
+      {title}
+    </button> 
   )
 }
 

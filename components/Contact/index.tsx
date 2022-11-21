@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../layout/Button'
 import Section from '../layout/section'
 import TitleSection from '../layout/section/title'
 
@@ -32,9 +33,8 @@ const Contact = () => {
           rows={10}
           placeholder='Message'
         ></textarea>
-        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>
-          Let´s Collaborate
-        </button>
+        <Button title={'Let´s Collaborate'} />
+
       </form>
     </Section>
   )
