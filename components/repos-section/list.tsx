@@ -1,4 +1,4 @@
-import { Repo } from '../../model/Repo'
+import { Repo } from '../../interfaces/Repo'
 import RepoItem from './item'
 
 interface Props {

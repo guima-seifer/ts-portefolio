@@ -1,0 +1,7 @@
+.navigation:hover{
+    color: rgb(219 39 119 / var(--tw-text-opacity));
+    }
+    
+.navigation:active{
+         color: rgb(219 39 119 / var(--tw-text-opacity));
+        }

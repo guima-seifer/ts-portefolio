@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill, BsFillMoonStarsFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 import Image from 'next/image'
 import Logo from '../../../assets/logo192.png'
+import styles from './navbar.module.css'
 
 export type NavBarProps = {
   updateDarkMode: (arg: boolean) => void
@@ -22,41 +23,45 @@ const Navbar = ({updateDarkMode} : NavBarProps) => {
   }
 
   return (  
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-teal-900 text-gray-200'>
-      <div className='mx-8'>
-                <Image src={Logo} alt='' style={{ width: '50px' }} />
-            
-      </div>
+    <div className='fixed w-full h-[80px] items-center px-4 grid text-teal-900 dark:text-white'>
+
       {/* Menu */}
-      <ul className='hidden md:flex'>
-        <li>
-          <BsFillMoonStarsFill onClick={changeTheme} className='mr-2 inline first-letter:cursor-pointer' /></li>
-        <li>
+      <div className='flex justify-center'>
+      <div className=''>
+                <Image src={Logo} alt='' style={{ width: '50px' }} />
+      </div>
+      <ul className='hidden md:flex mt-5'>
+       
+        <li className={styles.navigation}>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className={styles.navigation}>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className={styles.navigation}>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className={styles.navigation}>
           <Link to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li>
+        <li className={styles.navigation}>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
+        <li>
+          <BsFillMoonStarsFill onClick={changeTheme} className='mr-2 inline first-letter:cursor-pointer' /></li>
       </ul>
+      </div>
+
       {/* Hamburguer */}
       <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}

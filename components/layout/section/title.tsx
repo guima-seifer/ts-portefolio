@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TitleSection = ({ ...Props }) => {
   return (
     <div>

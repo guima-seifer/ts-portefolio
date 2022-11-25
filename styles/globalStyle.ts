@@ -1,9 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
 
-type Props = {
-
-}
-
 export const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;

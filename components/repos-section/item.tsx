@@ -1,5 +1,5 @@
 import { FaEye, FaInfo, FaLink, FaStar, FaUtensils } from 'react-icons/fa'
-import { Repo } from '../../model/Repo'
+import { Repo } from '../../interfaces/Repo'
 import Button from '../layout/Button'
 import Link from 'next/link'
 

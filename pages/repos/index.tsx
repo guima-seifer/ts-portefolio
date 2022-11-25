@@ -1,11 +1,10 @@
 import { NextPage } from 'next'
-import { fetchRepos, fetchUsers } from '../../api/github'
-import Section from '../../components/layout/section'
-import RepoList from '../../components/repos-section/list'
-import UserItem from '../../components/repos-section/user-info'
-import { Repo } from '../../model/Repo'
-import { User } from '../../model/User'
-
+import { fetchRepos, fetchUsers } from '../api/github'
+import Section from '@components/layout/section'
+import RepoList from '@components/repos-section/list'
+import UserItem from '@components/repos-section/user-info'
+import { Repo } from '@interfaces/Repo'
+import { User } from '@interfaces/User'
 
 interface Props {
   user: User
@@ -13,10 +12,12 @@ interface Props {
 }
 
 const Repos: NextPage<Props> = ({ user, repos }: Props) => (
+  <article>
     <Section>
-    <UserItem {...user} />
-    <RepoList repos={repos} />
+      <UserItem {...user} />
+      <RepoList repos={repos} />
     </Section>
+  </article>
 )
 
 /* getInitialProps enables server-side rendering in a page and 

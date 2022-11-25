@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Section charKey='about'>
       <div className='grid grid-cols-2 gap-8'>
-        <div className='sm:text-right pb-8'>
+        <div className='pb-8'>
         <TitleSection title="About"/>
         </div>
       </div>

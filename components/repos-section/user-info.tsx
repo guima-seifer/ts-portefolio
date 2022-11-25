@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { User } from '../../model/User'
+import { User } from '../../interfaces/User'
 import Image from 'next/image'
 import TitleSection from '../layout/section/title'
 import Button from '../layout/Button'
