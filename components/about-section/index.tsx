@@ -2,9 +2,6 @@ import React from 'react'
 import Section from '../layout/section'
 import TitleSection from '../layout/section/title'
 
-export type AboutProps = {
-  children?: React.ReactNode
-}
 const About = () => {
   return (
     <Section charKey='about'>

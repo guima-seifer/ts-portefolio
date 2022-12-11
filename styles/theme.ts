@@ -13,4 +13,4 @@ const Section = tw.div`
    dark:bg-[#0a192f]
     text-gray-900
      dark:text-gray-300
-  ` 
+  `

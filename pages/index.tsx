@@ -10,7 +10,7 @@ import { NextPage } from 'next'
 import { User } from '@interfaces/User'
 import { Repo } from '@interfaces/Repo'
 import { fetchRepos, fetchUsers } from 'pages/api/github'
-import Repos from './repos'
+import Repos from '../components/repos-section'
 
 
 interface Props {

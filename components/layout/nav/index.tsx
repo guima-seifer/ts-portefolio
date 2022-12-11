@@ -53,6 +53,11 @@ const Navbar = ({updateDarkMode} : NavBarProps) => {
           </Link>
         </li>
         <li className={styles.navigation}>
+          <Link to='repos' smooth={true} duration={500}>
+            Repositories
+          </Link>
+        </li>
+        <li className={styles.navigation}>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>

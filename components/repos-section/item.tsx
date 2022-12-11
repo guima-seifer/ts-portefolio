@@ -16,7 +16,7 @@ function RepoItem({
   return (
     <div
       key={id}
-      className='w-[300px] shadow-lg shadow-[#040c16] flex group container content-div'
+      className='shadow-lg shadow-[#040c16] flex group container content-div'
     >
       {/* Hover Effects */}
       <div className='my-4 mx-3 h-[100px]'>
