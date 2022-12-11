@@ -16,17 +16,17 @@ function RepoItem({
   return (
     <div
       key={id}
-      className='shadow-lg shadow-[#040c16] group container flex content-div mt-3'
+      className='w-[300px] shadow-lg shadow-[#040c16] flex group container content-div'
     >
       {/* Hover Effects */}
-      <div className='my-4 mx-4'>
-        <span className='text-xl font-bold justify-center text-black tracking-wider dark:text-white'>
+      <div className='my-4 mx-3 h-[100px]'>
+        <span className=' text-xl font-bold justify-center text-black tracking-wider dark:text-teal-900'>
           {name}
         </span>
-        <p className='text-black tracking-wider dark:text-gray-300'>
+        <p className='text-black tracking-wider dark:text-black  h-[80px]'>
           {description}
         </p>
-        <div className=' grid content-center grid-cols-4 justify-items-stretch gap-4 mt-3 mx-4 '>
+        <div className='dark:text-teal-900 grid content-center grid-cols-4 justify-items-stretch gap-4 mt-3 mx-4 '>
           <div className='px-3 '>
             <FaEye className='mr-2' /> {watchers_count}
           </div>
@@ -40,10 +40,9 @@ function RepoItem({
             <FaUtensils className='mr-2' /> {forks}
           </div>
         </div>
-        <div className='flex justify-center pt-3'>
+        <div className='justify-center pb-5  h-[100px] pt-3'>
           {/* eslint-disable-next-line */}
           <Link className='mx-auto' target='_blank' href={`${html_url}`}>
-            <FaLink className='mr -2' />
             <Button title={'Repo'} />
           </Link>
         </div>

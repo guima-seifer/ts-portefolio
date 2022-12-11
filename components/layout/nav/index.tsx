@@ -23,7 +23,7 @@ const Navbar = ({updateDarkMode} : NavBarProps) => {
   }
 
   return (  
-    <div className='fixed w-full h-[80px] items-center px-4 grid text-teal-900 dark:text-white'>
+    <div className='fixed w-full h-[80px] items-center px-4 grid text-white bg-teal-900 dark:bg-transparent dark:text-white'>
 
       {/* Menu */}
       <div className='flex justify-center'>

@@ -30,8 +30,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
+    "lint": "next lint",
+    "tx:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  }, 
   "eslintConfig": {
     "extends": [
       "react-app",
