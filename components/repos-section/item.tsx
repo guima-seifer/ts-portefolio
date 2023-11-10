@@ -3,6 +3,11 @@ import { Repo } from '../../interfaces/Repo'
 import Button from '../layout/Button'
 import Link from 'next/link'
 
+import {
+  TableCell,
+  TableRow,
+} from "../../components/ui/table"
+
 function RepoItem({
   name,
   id,
@@ -14,11 +19,16 @@ function RepoItem({
   stargazers_count,
 }: Repo) {
   return (
-    <div
+    <>
+      <TableCell className="font-medium">{name}</TableCell>
+      <TableCell>{description}</TableCell>
+      <TableCell><Link href={html_url}><FaLink /></Link></TableCell>
+      </>
+    
+    /* <div
       key={id}
       className='shadow-lg shadow-[#040c16] flex group container content-div'
     >
-      {/* Hover Effects */}
       <div className='my-4 mx-3 h-[100px]'>
         <span className=' text-xl font-bold justify-center text-black tracking-wider dark:text-teal-900'>
           {name}
@@ -41,13 +51,12 @@ function RepoItem({
           </div>
         </div>
         <div className='justify-center pb-5  h-[100px] pt-3'>
-          {/* eslint-disable-next-line */}
           <Link className='mx-auto' target='_blank' href={`${html_url}`}>
             <Button title={'Repo'} />
           </Link>
         </div>
       </div>
-    </div>
+    </div> */
   )
 }
 

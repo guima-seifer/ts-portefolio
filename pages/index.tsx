@@ -33,11 +33,10 @@ const Home : NextPage<Props> = ({user, repos}) => {
       <main>
         <Navbar />
         <Hero/>
-        <About />
+        <Repos user={user} repos={repos} />
+
         <Skills />
         <Work />
-        <Repos user={user} repos={repos} />
-        <Contact />
       </main>
     </div>
   )

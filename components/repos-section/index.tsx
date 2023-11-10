@@ -15,7 +15,6 @@ const Repos = ({ user, repos }: Props) => {
   return (
     <Section charKey='repos'>
       <div className='max-w-[1000px] w-full mt-[5rem]'>
-      <TitleSection title='Repos' desc='My github repositories.' />
       <UserItem {...user} />
         <RepoList repos={repos} />
         </div>

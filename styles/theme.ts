@@ -1,11 +1,5 @@
 import tw from 'tailwind-styled-components'
 
-export const theme = {
-    colors: {
-        primary: '#212121',
-    }
-}
-
 const Section = tw.div`
  w-full
  h-screen
