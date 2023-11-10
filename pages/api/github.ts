@@ -33,7 +33,7 @@ export const fetchRepos = async (login: string) => {
   const userReposURL = `${baseRoot}/repos`
   const resUser = await fetch(userReposURL)
   const repos = await resUser.json();
-  console.log(repos)
+  //console.log(repos)
 
   return repos
 }
