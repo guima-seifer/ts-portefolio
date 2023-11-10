@@ -1,7 +1,5 @@
 import React from 'react'
-import Button from '../layout/Button'
-import Section from '../layout/section'
-
+import {Button} from '../../components/ui/button'
 const Contact = () => {
   return (
     <div className='mb-3'>
@@ -28,10 +26,10 @@ const Contact = () => {
           className='bg-[#f1f1f1] p-3'
           name='message'
           id='message'
-          rows={10}
+          rows={5}
           placeholder='Message'
         ></textarea>
-        <Button title={'Send'} />
+        <Button className='mt-2'>Send</Button>
 
       </form>
     </div>

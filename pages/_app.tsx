@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from '../components/theme-provider'
-import { GlobalStyle } from '../styles/globalStyle'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +11,6 @@ export default function App({ Component, pageProps }: AppProps) {
         enableSystem
         disableTransitionOnChange
       >
-        <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

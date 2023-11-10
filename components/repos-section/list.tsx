@@ -17,7 +17,7 @@ function RepoList({ repos }: Props) {
   return (
     <div className='gap-5'>
       <Table>
-        <TableCaption>List of recent repos.</TableCaption>
+        <TableCaption>Most recent github repositories.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className='w-[100px]'>Name</TableHead>
@@ -26,7 +26,7 @@ function RepoList({ repos }: Props) {
         </TableHeader>
         <TableBody>
           {repos.map((repo, index) => (
-            <TableRow>
+            <TableRow key={index}>
               <RepoItem key={index} {...repo} />
             </TableRow>
           ))}
